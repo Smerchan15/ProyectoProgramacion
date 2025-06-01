@@ -8,11 +8,10 @@
  * @author estef
  */
 import java.awt.Dimension;
-import java.awt.event.ActionEvent; // Asegúrate de que estos imports estén presentes
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
-// Importa las clases de tus otras ventanas y diálogos
 
 
 public class NewJFrame extends javax.swing.JFrame {
@@ -109,13 +108,10 @@ public class NewJFrame extends javax.swing.JFrame {
             // El usuario hizo clic en Aceptar y el nombre no está vacío
             System.out.println("El jugador se llama: " + nombreJugador);
 
-            // 3. Abrir VentanaHistoria, pasándole el nombre del jugador
+            // Abrir VentanaHistoria, pasándole el nombre del jugador
             VentanaHistoria ventanaHistoria = new VentanaHistoria(nombreJugador);
             ventanaHistoria.setVisible(true); // Muestra la ventana de historia
 
-            // 4. Cierra esta ventana (NewJFrame) si ya no la necesitas.
-            // Si quieres que el menú principal permanezca abierto detrás de la historia,
-            // comenta la siguiente línea.
             this.dispose();
 
         } else {
